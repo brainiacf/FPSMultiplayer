@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "FPSEditor Editor Win64 Development (FPS)",
+            "compilerPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\.vscode\\compileCommands_FPS.json"
+        },
+        {
+            "name": "Win32",
+            "compilerPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\.vscode\\compileCommands_Default.json"
+        }
+    ],
+    "version": 4
+}
