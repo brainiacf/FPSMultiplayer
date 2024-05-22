@@ -1,57 +1,57 @@
 [
 	{
-		"file": "C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\Source\\FPS\\FPS.Build.cs",
+		"file": "C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\FPSMultiplayer\\Source\\FPS\\FPS.Build.cs",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\.vscode\\compileCommands_FPS\\FPS.1.rsp"
+			"@C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\FPSMultiplayer\\.vscode\\compileCommands_FPS\\FPS.1.rsp"
 		],
 		"directory": "C:\\UE_5.4\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\Source\\FPS\\FPS.cpp",
+		"file": "C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\FPSMultiplayer\\Source\\FPS\\FPS.cpp",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\.vscode\\compileCommands_FPS\\FPS.1.rsp"
+			"@C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\FPSMultiplayer\\.vscode\\compileCommands_FPS\\FPS.1.rsp"
 		],
 		"directory": "C:\\UE_5.4\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\Source\\FPS\\FPS.h",
+		"file": "C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\FPSMultiplayer\\Source\\FPS\\FPS.h",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\.vscode\\compileCommands_FPS\\FPS.1.rsp"
+			"@C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\FPSMultiplayer\\.vscode\\compileCommands_FPS\\FPS.1.rsp"
 		],
 		"directory": "C:\\UE_5.4\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\Source\\FPS\\FPSCharacter.cpp",
+		"file": "C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\FPSMultiplayer\\Source\\FPS\\FPSCharacter.cpp",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\.vscode\\compileCommands_FPS\\FPS.1.rsp"
+			"@C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\FPSMultiplayer\\.vscode\\compileCommands_FPS\\FPS.1.rsp"
 		],
 		"directory": "C:\\UE_5.4\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\Source\\FPS\\FPSCharacter.h",
+		"file": "C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\FPSMultiplayer\\Source\\FPS\\FPSCharacter.h",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\.vscode\\compileCommands_FPS\\FPS.1.rsp"
+			"@C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\FPSMultiplayer\\.vscode\\compileCommands_FPS\\FPS.1.rsp"
 		],
 		"directory": "C:\\UE_5.4\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\Source\\FPS\\FPSGameMode.cpp",
+		"file": "C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\FPSMultiplayer\\Source\\FPS\\FPSGameMode.cpp",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\.vscode\\compileCommands_FPS\\FPS.1.rsp"
+			"@C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\FPSMultiplayer\\.vscode\\compileCommands_FPS\\FPS.1.rsp"
 		],
 		"directory": "C:\\UE_5.4\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\Source\\FPS\\FPSGameMode.h",
+		"file": "C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\FPSMultiplayer\\Source\\FPS\\FPSGameMode.h",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\.vscode\\compileCommands_FPS\\FPS.1.rsp"
+			"@C:\\Users\\nemju\\OneDrive\\Desktop\\FPS\\FPS\\FPSMultiplayer\\.vscode\\compileCommands_FPS\\FPS.1.rsp"
 		],
 		"directory": "C:\\UE_5.4\\Engine\\Source"
 	}

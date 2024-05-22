@@ -11,13 +11,16 @@
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
 #include "OnlineSubsystem.h" 
+#include "OnlineSessionSettings.h"
+
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
 //////////////////////////////////////////////////////////////////////////
 // AFPSCharacter
 
-AFPSCharacter::AFPSCharacter()
+AFPSCharacter::AFPSCharacter():
+	CreateSessionCompleteDelegate(FOnCreateSessionCompleteDelegate::CreateUObject(this,&ThisClass::OnCreateSessionComplete))
 {
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
@@ -55,7 +58,15 @@ AFPSCharacter::AFPSCharacter()
 	IOnlineSubsystem * OnlineSubsystem = IOnlineSubsystem::Get();
 	if(OnlineSubsystem)
 	{
-		OnlineSubsystem->GetSessionInterface();
+		OnlineSessionInterface = OnlineSubsystem->GetSessionInterface();
+		
+		if(GEngine)
+		{	
+			GEngine->AddOnScreenDebugMessage(-1,
+			5.f,
+			FColor::Green,
+			FString::Printf(TEXT("Online Subsystem Found: %s"),*OnlineSubsystem->GetSubsystemName().ToString()));
+		}
 	}
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
@@ -133,5 +144,38 @@ void AFPSCharacter::Look(const FInputActionValue& Value)
 		// add yaw and pitch input to controller
 		AddControllerYawInput(LookAxisVector.X);
 		AddControllerPitchInput(LookAxisVector.Y);
+	}
+}
+
+void AFPSCharacter::CreateGameSession()
+{
+	// Called when pressing 1 Key
+	if(!OnlineSessionInterface.IsValid()) {return;}
+
+	auto ExistingSession = OnlineSessionInterface->GetNamedSession(NAME_GameSession);
+
+	if(ExistingSession != nullptr)
+	{
+		OnlineSessionInterface->DestroySession(NAME_GameSession);
+	}
+
+	OnlineSessionInterface->AddOnCreateSessionCompleteDelegate_Handle(CreateSessionCompleteDelegate);
+
+	TSharedPtr<FOnlineSessionSettings> SessionSettings = MakeShareable(new FOnlineSessionSettings());
+	const ULocalPlayer* LocalPlayer = GetWorld()->GetFirstLocalPlayerFromController();
+	OnlineSessionInterface->CreateSession(*LocalPlayer->GetPreferredUniqueNetId(), NAME_GameSession, *SessionSettings);
+
+}
+void AFPSCharacter::OnCreateSessionComplete(FName SessionName, bool bWasSuccessful)
+{
+	// Called when creating a session is complete
+	if(bWasSuccessful)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue,
+		FString::Printf( TEXT("Session Created Successfully: %s"),*SessionName.ToString()));
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Session Creation Failed"));
 	}
 }

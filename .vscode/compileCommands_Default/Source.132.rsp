@@ -1,5 +1,5 @@
 /FI "C:\UE_5.4\Engine\Plugins\Editor\MaterialAnalyzer\Intermediate\Build\Win64\x64\UnrealEditor\Development\MaterialAnalyzer\Definitions.MaterialAnalyzer.h" 
-/FI "C:\Users\nemju\OneDrive\Desktop\FPS\FPS\Intermediate\Build\Win64\x64\FPSEditor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h" 
+/FI "C:\Users\nemju\OneDrive\Desktop\FPS\FPS\FPSMultiplayer\Intermediate\Build\Win64\x64\FPSEditor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h" 
 /I "C:\UE_5.4\Engine\Source" 
 /I "C:\UE_5.4\Engine\Plugins\Editor\MaterialAnalyzer\Source\Private" 
 /I "C:\UE_5.4\Engine\Plugins\Editor\AssetManagerEditor\Intermediate\Build\Win64\UnrealEditor\Inc\AssetManagerEditor\UHT" 
